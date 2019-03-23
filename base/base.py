@@ -23,3 +23,7 @@ class base():
         el = self.base_find_element(ele)
         el.clear()
         el.send_keys(values)
+
+    # 从左往右滑动
+    def base_left_to_right(self):
+        self.driver.swipe(83,1248,1200,1248)
